@@ -1,0 +1,275 @@
+ body{
+     background-color: #fff;
+     font-family: 'Oswald', sans-serif;
+     padding: 0;
+     margin: 0;
+     font-size: 12px;
+ }
+ .mt55{
+     margin-top: 55px;
+ }
+h1,p{
+    margin: 0!important;
+    padding: 0!important;
+}
+ #topBar{
+     color: #696969;
+     font-weight: lighter;
+ }
+ #topBar input {
+	position: relative;
+	background-color: #e1e1e1;
+	border: none;
+}
+#topBar .srBtn {
+	position: absolute;
+	top: 0;
+	right: 14px;
+	background-color: #528613;
+	color: #fff;
+	text-align: center;
+	padding: 0 5px;
+	margin: 0;
+}
+ .logo h1{
+     font-size: 30px;
+     text-transform: uppercase;
+     color: #fff;
+ }
+ .logo p{
+     font-size: 18px;
+     color: #fff;
+ }
+#slider{
+    background-color: #fff;
+}
+#slogan{
+    font-size: 28px;
+}
+#divider .dividerBg{
+    height: 5px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+#product .product-wrapper{
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+#product .product-wrapper img{
+    width:100%;
+}
+#product .product-wrapper h5{
+    color: #7c9c37;
+    padding: 25px 20px;
+    margin: 0;
+}
+#product .product-wrapper p{
+    padding: 0px 20px 20px 20px!important;
+}
+#author .authorHead{
+    border-bottom: 1px solid #e2e2e2;
+}
+#author .authorHead strong{
+    font-size: 18px;
+    font-weight: normal;
+}
+#author .authorHead span a{
+    color: #7c9c37;
+}
+.popularProductImg img{
+    width: 100%;
+}
+.productDetails h3{
+    color: #7c9c37;
+    font-size: 15px;
+    font-weight: 600;
+}
+.productDetails p{
+    font-size: 13px;
+}
+.authorBox{
+    box-sizing: border-box;
+}
+.authorBox img{
+    width: 100%;
+}
+.authorBox span{
+    font-weight: normal;
+}
+.authorBox a{
+    color: #7c9c37;
+}
+.authorBox strong{
+    font-weight: 600;
+}
+#footer{
+    background-color: #222222;
+    color: #666666;
+    padding: 30px 0;
+    border-bottom: 1px solid #666666;
+
+}
+#footer h3{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+#footer p{
+    font-size: 12px;
+}
+.footerImg img{
+    width: 100%;
+    border: 1px solid #666666;
+    padding: 5px;
+}
+#footer a{
+    color: #7c9c37;
+}
+#footer a:hover{
+    text-decoration: none;
+}
+#footer ul li{
+    list-style: none;
+    border-bottom: 1px solid #3a3a3a;
+}
+#footer ul{
+    padding: 0;
+}
+.contact span{
+    text-transform: capitalize;
+}
+.contact strong{
+    text-transform: lowercase;
+}
+.contact input{
+    margin-bottom: 10px;
+    background-color: #333333;
+    border: none;
+}
+.myBtn{
+    background-color: #7c9c37;
+}
+.em{
+    color: #7c9c37;
+}
+#copyWrite{
+    background-color: #222222;
+    color: #666666;
+    padding: 20px 0;
+
+}
+.hoverBox{
+    box-sizing: border-box;
+    position: relative;
+}
+.hoverBox img{
+    width: 100%;
+}
+.afterHover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.afterHover p{
+    padding: 100px 20px!important;
+    color: #fff;
+}
+.hoverBox:hover .afterHover{
+    display: block;
+}
+
+
+
+
+
+ /* bootstrap override */
+ #navBar{
+    border-bottom: 2px solid #7c9c37;
+    background-color: #222222;
+ }
+ #navBar .fa{
+     color: #fff;
+ }
+ #navBar .nav-link{
+     color: #cccccc;
+
+ }
+ 
+ #navBar .nav-link span{
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ #navBar .nav-link:hover span{
+     color: #7c9c37;
+ }
+ #slider .fa{
+     color: #666666;
+     border: 1px solid #666666;
+     background-color: #000;
+     padding: 15px;
+     border-radius: 50%;
+ }
+
+
+
+
+
+
+
+ /* mediaquery */
+@media (min-width: 320px) { 
+    .logo h1 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .logo p {
+        font-size: 13px;
+        font-style: italic;
+    }
+    #slogan h1{
+        font-size: 22px;
+    }
+    #copyWrite p {
+        font-size: 11px;
+    }
+ }
+
+@media (min-width: 576px) { 
+    .afterHover p {
+        padding: 55px 20px !important;
+    }
+   
+ }
+
+@media (min-width: 768px) { 
+    .afterHover p {
+        padding: 115px 20px !important;
+    }
+    #footer a {
+        font-size: 14px;
+    }
+ }
+
+@media (min-width: 992px) {
+    #navBar .nav-item:not(:last-of-type){
+        border-right: 1px solid #cccccc;
+     }
+     .afterHover p {
+        padding: 66px 20px !important;
+    }
+    #slogan h1 {
+        font-size: 35px;
+    }
+
+ }
+
+@media (min-width: 1200px) { 
+
+ }
