@@ -8,6 +8,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/c564c6262b.js"></script>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
@@ -36,7 +37,7 @@
           </div>
       </div>
 
-      <div id="navBar">
+      <div id="navBar" class="sticky-top">
           <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
@@ -56,31 +57,25 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav text-center ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link" href="#slider">
                             <span>Home</span>
                             <p class="d-none d-lg-block">test text here</p>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <span>Style Demo</span>
+                          <a class="nav-link" href="#product">
+                            <span>Product</span>
                             <p class="d-none d-lg-block">test text here</p>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <span>Full Width</span>
+                          <a class="nav-link" data-scroll href="#author">
+                            <span>Author</span>
                             <p class="d-none d-lg-block">test text here</p>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <span>Portfolio</span>
-                            <p class="d-none d-lg-block">test text here</p>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link" href="#hoverSection">
                             <span>gallery</span>
                             <p class="d-none d-lg-block">test text here</p>
                           </a>
@@ -162,28 +157,28 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 mt-3">
-              <div class="product-wrapper">
+              <div class="product-wrapper" data-aos="fade-up">
                 <img src="img/p1.jpg" alt="product">
                 <h5>Indonectetus facilis</h5>
                 <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.</p>
               </div>
             </div>
             <div class="col-lg-3 mt-3">
-              <div class="product-wrapper">
+              <div class="product-wrapper" data-aos="fade-up">
                 <img src="img/p2.jpg" alt="product">
                 <h5>Indonectetus facilis</h5>
                 <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.</p>
               </div>
             </div>
             <div class="col-lg-3 mt-3">
-              <div class="product-wrapper">
+              <div class="product-wrapper" data-aos="fade-up">
                 <img src="img/p3.jpg" alt="product">
                 <h5>Indonectetus facilis</h5>
                 <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.</p>
               </div>
             </div>
             <div class="col-lg-3 mt-3">
-              <div class="product-wrapper">
+              <div class="product-wrapper" data-aos="fade-up">
                 <img src="img/p4.jpg" alt="product">
                 <h5>Indonectetus facilis</h5>
                 <p>Dignissimmorbi rhoncus sed netus ligula conseque netus nulla aliquat id dui fermentumnec.</p>
@@ -210,7 +205,7 @@
       <div id="author" class="mt55">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mt-3" data-aos="fade-up">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="authorHead">
@@ -295,7 +290,7 @@
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 mt-3" data-aos="fade-left">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="authorHead">
@@ -346,7 +341,7 @@
       <div id="hoverSection" class="mt55">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-3">
+            <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-3" data-aos="fade-left">
                <div class="row">
                  <div class="col-sm-6 p-0">
                    <div class="hoverBox">
@@ -460,10 +455,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/custom.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </body>
 </html>
