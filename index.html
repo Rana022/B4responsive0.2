@@ -4,58 +4,42 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/c564c6262b.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/offcanvas.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
     <title>Allrounder Responsive site</title>
   </head>
   <body>
-      <div id="topBar">
-          <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <strong>Call Us: <span>xxxxxxxxxx</span></strong>
-                </div>
-                <div class="col-sm-6 col-lg-4 text-right">
-                    <strong>Email Us: <span>contact@mydomain.com</span></strong>
-                </div>
-                <div class="col-sm-5 d-none d-lg-block">
-                    <div class="search text-right">
-                        
-                        <input type="text" name="search">
-                        <button type="button" class="btn srBtn">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                </div>
-              </div>
-          </div>
-      </div>
 
       <div id="navBar" class="sticky-top">
           <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">
+
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start fixed-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2 mr-auto" href="#">
                       <div class="logo">
                         <h1><span>a</span>llrounder</h1>
                         <p>Free PSD Website Template</p>
                       </div>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span>
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                      </span>
+                      </a
+                    >
+                    <button class="navbar-toggler align-self-start" type="button">
+                      <span class="navbar-toggler-icon"></span>
                     </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav text-center ml-auto">
+                
+                    <div
+                      class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navbar-nav align-self-stretch">
                         <li class="nav-item">
                           <a class="nav-link" href="#slider">
                             <span>Home</span>
@@ -80,10 +64,12 @@
                             <p class="d-none d-lg-block">test text here</p>
                           </a>
                         </li>
-
                       </ul>
                     </div>
-                  </nav>
+                  </div>
+                </nav>
+      <div class="overlay"></div>
+
                 </div>
                
               </div>
@@ -452,6 +438,7 @@
           </div>
         </div>
       </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
